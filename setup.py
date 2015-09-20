@@ -10,11 +10,11 @@ setup(name='AlienFeed',
       keywords = "AlienFeed alien reddit feed rss tool cli",
       author_email='jawerty210@gmail.com',
       url='http://github.com/jawerty/AlienFeed',
-      scripts=['alienfeed/alien.py'],
+      packages=['alienfeed'],
       install_requires=['praw'],
       entry_points = {
         'console_scripts': [
-            'alienfeed = alien:main'
+            'alienfeed = alienfeed.alien:main'
         ],
       }
 )
